@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For Yesha.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         INTRO
+    ========================================== -->
+
+    <section class="intro">
+
+        <!-- Background grain -->
+        <div class="grain"></div>
+
+
+        <div class="intro-content">
+
+
+            <!-- Small top text -->
+
+            <p class="small-text">
+                A little something for you 🫶!
+            </p>
+
+
+            <!-- Photo -->
+
+            <div class="photo-wrapper">
+
+         <div class="photo">
+    
+         <img src="yesha.jpg" alt="Yesha">
+
+         </div>
+
+            </div>
+
+            <!-- Name -->
+
+            <h4>
+                Her🌹.
+            </h4>
+
+
+
+            <!-- Quote -->
+
+            <p class="quote">
+                You came into my life so naturally
+                that I never realized when
+                “you” became a part of “me.”
+            </p>
+
+
+            <!-- Enter -->
+
+            <button class="enter" type="button" onclick="
+                event.preventDefault();
+                const introSection = document.querySelector('.intro');
+                const mainSection = document.getElementById('mainContent');
+                document.body.classList.add('entered');
+                if (introSection) introSection.style.display = 'none';
+                if (mainSection) {
+                    mainSection.style.display = 'block';
+                    mainSection.classList.add('visible');
+                    mainSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            ">
+
+                <span>enter</span>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- Bottom -->
+
+        <div class="bottom-text">
+
+            <span>
+                Made from everything I never quite knew how to say 🥹.
+            </span>
+
+        </div>
+
+
+    </section>
+
+    <audio id="backgroundMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="mainContent" class="main-content">
+
+
+    <!-- =====================================
+         SECTION 1 — HERO
+    ====================================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">a little corner of the internet</p>
+
+            <h1>
+                You, in little<br>
+                <em>moments.</em>
+            </h1>
+
+            <p class="hero-description">
+                Five years of conversations, random moments,
+                and memories I probably couldn't
+                explain to anyone else.
+            </p>
+
+            <p class="hero-ending">
+                And somehow, you're still one of my favourite people.
+            </p>
+
+            <div class="scroll-down">
+                <span>there's a little more</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 2 — ABOUT YOU
+    ====================================== -->
+
+    <section class="about section-padding">
+
+        <div class="section-label">
+            <span>01</span>
+            <span>about you</span>
+        </div>
+
+        <div class="about-visual" aria-label="A small memory photo of Yesha">
+
+            <figure class="polaroid-card">
+                <div class="memory-image memory-video">
+                    <video autoplay muted loop playsinline preload="auto" aria-label="A memory with Yesha">
+                        <source src="videos/memory5.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <figcaption>you, in my favourite light.♡</figcaption>
+            </figure>
+        </div>
+
+        <div class="content-wrapper">
+
+            <p class="eyebrow">where do I even begin?</p>
+
+            <h3>
+                If I tried to describe you,
+                I wouldn’t even know where to begin—
+                there’s simply too much wonder to put into words.
+            </h3>
+
+            <p>
+                There are countless words I could spill just to describe you—
+                all the tiny, remarkable things I’ve noticed across the years.
+                But I think I could write forever
+                and still never find enough ways to say it all.<br>
+                But if there's one thing that has always
+                stood out to me...
+            </p>
+
+            <h3>It's how much you care.</h3>
+
+            <p>
+                You care in ways that most people overlook.
+                You see the quiet details,
+                remember the words others almost forget to say. 
+                and you reach out to check on others—even when no one is watching.
+                And somehow, you always manage to make people
+                feel like they matter.
+            </p>
+
+            <p class="emphasis">
+                But that one thing has never changed.
+            </p>
+
+            <h3 class="large-highlight">Your heart.</h3>
+
+            <p>
+                You carry a quiet kind of kindness—
+                the kind that never needs to be announced.
+                You simply give and care, just because it’s who you are.<br>
+                And maybe you don't even realise
+                how much that means to the people around you.
+            </p>
+
+            <p class="emphasis">
+                Especially to me.
+            </p>
+
+            <p>
+                There are honestly an infinity of things
+                I could write about you—
+                so I’ll leave some unwritten,
+            </p>
+
+            <p class="closing-line">
+                So I’ll keep some words close, trusting that you already feel them.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 3 — PHOTO MEMORIES
+    ====================================== -->
+
+    <section class="memories section-padding">
+
+        <div class="memories-heading">
+
+            <p class="eyebrow">02 — Your Memories</p>
+
+            <h2>
+                Moments close<br>
+                 to my heart ❤️.
+            </h2>
+
+            <p>
+                Just a few pieces of the person
+                who means a lot to me.
+            </p>
+
+            <p>
+                u being you..and i always fall for you 🫠🥹.
+            </p>
+        </div>
+
+
+        <div class="memory-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="memory-card memory-one">
+
+                <div class="memory-image">
+                    <img src="images/photo1.jpg" alt="A memory with Yesha">
+                </div>
+
+                <p class="photo-caption">
+                    A little smile, a little magic, a whole lot of you. 💙
+                </p>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="memory-card memory-two">
+
+                <div class="memory-image">
+                    <img src="images/photo2.jpg" alt="A memory with Yesha">
+                </div>
+
+                <p class="photo-caption">
+                    you, being unapologetically you 🫠.
+                </p>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="memory-card memory-three">
+
+                <div class="memory-image memory-video">
+                    <video autoplay muted loop playsinline preload="auto" aria-label="A memory with Yesha">
+                        <source src="videos/memory4.mp4" type="video/mp4">
+                        Your browser cannot play this video. Please use an H.264 MP4 file.
+                    </video>
+                </div>
+
+                <p class="photo-caption">
+                    u being you..and i always fall for you 🫠🥹.
+                </p>
+
+            </div>
+
+
+            <!-- video-->
+            <div class="memory-card memory-seven">
+
+                <div class="memory-image memory-video">
+                    <video autoplay muted loop playsinline preload="auto" aria-label="A memory with Yesha">
+                        <source src="videos/memory1.mp4" type="video/mp4">
+                        Your browser cannot play this video. Please use an H.264 MP4 file.
+                    </video>
+                </div>
+
+                <p class="photo-caption">
+                    A little glimpse of you, wrapped in sunshine and flowers. 🌼🤍
+                </p>
+
+            </div>
+
+            <div class="memory-card memory-eight">
+
+                <div class="memory-image memory-video">
+                    <video autoplay muted loop playsinline preload="auto" aria-label="A memory with Yesha">
+                        <source src="videos/memory2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="photo-caption">
+                    A little piece of sunset, and a little more of you. 🌅🤍
+                </p>
+
+            </div>
+
+             <div class="memory-card memory-nine">
+
+                <div class="memory-image memory-video">
+                    <video autoplay muted loop playsinline preload="auto" aria-label="A memory with Yesha">
+                        <source src="videos/memory3.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="photo-caption">
+                    Elegance looks a little more beautiful when it looks like you. ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-ending">
+
+            <p>
+                And these are only a few...
+            </p>
+
+            <h3>
+                You didn't just enter my life; you made it special.🤍
+            </h3>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 4 — THINGS I NEVER SAY
+    ====================================== -->
+
+    <section class="letter section-padding">
+
+        <div class="section-label">
+            <span>03</span>
+            <span>things I never really say</span>
+        </div>
+
+        <div class="content-wrapper">
+
+            <p class="eyebrow">a little honesty</p>
+
+            <h2>
+                Some things are easier<br>
+                to write than say.
+            </h2>
+
+            <p>
+                There are feelings I’ve never quite said out loud to you.
+                Maybe it’s because when someone means this much,
+                words start to feel too small.
+            </p>
+
+            <p>
+                There was a time in my life
+                when I genuinely didn't know what I was doing.<br>
+                I didn't know what was next.
+                I didn't know which way to go.
+                And honestly, there were moments
+                when I wasn't even sure of myself.
+            </p>
+
+            <h4 class="large-highlight">
+                But you were there.
+            </h4>
+
+            <p>
+            You didn’t have to be there.
+            You could have just said, “It’ll be fine,” and moved on.
+            But you didn’t. 
+            </p>
+
+            <h4 class="large-highlight">
+                You stayed.
+            </h4>
+
+            <p>
+            You listened, gently,
+            when I didn’t know how to speak.
+            You helped me find my way
+            when I felt lost.
+            And when I wanted to give up,
+            you were the reason I kept going.
+            </p>
+
+                <p>
+                    You believed in me during a time
+                    when I was struggling to believe in myself.<br>
+                    And I don't think I've ever properly told you
+                    how much that meant to me.
+                </p>
+
+                <p>
+                    You probably thought you were just being there
+                    for a friend.<br>
+                    But for me,
+                    you were much more than that in those moments.
+                </p>
+
+                <p>
+                    You were the person who reminded me
+                    that things could get better.
+                </p>
+
+            <h3 class="large-highlight">
+                So... thank you.
+            </h3>
+
+            <p>
+                For standing beside me.
+                For believing in me.
+                For motivating me.
+                For being patient with me.
+                For being there when I needed someone.
+            </p>
+
+
+            <p class="closing-line">
+                And I’m even more grateful that, after all this time, you’re still the person I can always count on...
+            </p>
+
+            <h3 class="large-highlight">
+                you're still here.
+            </h3>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 5 — IF YOU EVER FORGET
+    ====================================== -->
+
+    <section class="if-you-forget section-padding">
+
+        <div class="forget-content">
+
+            <p class="eyebrow">04 — if you ever forget</p>
+
+            <h2>
+                Come back<br>
+                <em>here.</em>
+            </h2>
+
+            <div class="forget-intro">
+
+                <p>
+                    If you ever forget how much you mean
+                    to the people around you...
+                </p>
+
+                <p class="forget-highlight">
+                    come back here.
+                </p>
+
+                <p>
+                    If the world feels too heavy, or your light feels dim...
+                </p>
+
+                <p class="forget-highlight">
+                    come back here.
+                </p>
+
+                <p>
+                    If you ever start questioning
+                    whether your presence actually matters...
+                </p>
+
+                <p class="forget-highlight">
+                    come back here.
+                </p>
+
+            </div>
+
+
+            <div class="forget-message">
+
+                <p>
+                    If memory ever blurs or doubt ever lingers, let these words hold the truth for you:
+                </p>
+
+                <p>
+                    You are the laughter that lifts my heavy days.
+                    The gentle calm in the middle of my storms.
+                    The smile I search for in the rush of the world.
+                    the rare soul that makes my world softer, brighter, better—just by being you.
+                </p>
+
+                <p>
+                   I know I don’t say it nearly enough—
+                   Ordinary days blur past in messages and little updates between us,
+                   but every time your name lights up my screen,
+                   I catch myself smiling
+                   before I’ve even read a word.
+                </p>
+
+                <h3>
+                    But underneath all of that...
+                </h3>
+
+                <p>
+                    I'm really grateful for you. <br>
+                    For your heart.
+                    For your kindness.
+                    For your presence.
+                    For every conversation.
+                    For every memory.
+                    For every time you were there.
+                </p>
+
+                <p class="forget-big">
+                   So—if you ever lose sight of how deeply loved you are…
+                </p>
+
+                <h3 class="forget-final">
+                    Let this quiet corner remind you.
+                </h3>
+
+                <p class="forget-last">
+                    You are more precious than you know, Yesha.
+                </p>
+
+                <p>
+                Please, never trade your softness for the world.
+                You are the quiet joy in my loudest days.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 6 — BIRTHDAY REVEAL
+    ====================================== -->
+
+    <section class="birthday section-padding">
+
+        <div class="birthday-content">
+
+            <p class="birthday-date">
+                26 . 10 . 2026
+            </p>
+
+            <div class="birthday-photo">
+
+                <img src="images/photo7.jpg" alt="Yesha">
+
+            </div>
+
+            <p class="eyebrow">one more year of you</p>
+
+            <h2>
+                Happy Birthday,<br>
+                <em>Yesha ❤️.</em>
+            </h2>
+
+            <p class="birthday-message">
+                Five years of knowing you… 
+                and I still don’t think all the words in the world—or even a whole website—could 
+                capture everything you mean to me.
+            </p>
+
+            <p class="birthday-message">
+               Here’s to you:
+                for the person you were,
+                the friend you are,
+                and the amazing soul you’re destined to be.
+            </p>
+
+            <h3>
+                Here's to many more memories.
+            </h3>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SECTION 7 — FINAL MESSAGE
+    ====================================== -->
+
+    <section class="final-section section-padding">
+
+        <div class="final-content">
+
+            <p class="eyebrow">and one last thing...</p>
+
+             <h2>
+                This isn't<br>
+                the <em>end.</em>
+             </h2>
+
+            <p class="final-description">
+                “A story I hope never ends”
+            </p>
+            <div class="final-photo">
+
+                <img src="images/photo8.jpg" alt="Yesha">
+
+            </div>
+
+            <p class="final-thankyou">
+                Thank you for being the heart behind so many of my smiles.🥹
+            </p>
+
+            <p class="final-date">
+                26.10.2026
+            </p>
+
+            <p class="final-signature">
+               A small reflection of all the beauty you inspire. ♡
+            </p>
+
+        </div>
+
+    </section>
+
+
+    </main>
+  <img id="flowerTouch" src="images/flower-cursor.png" 
+     style="position:fixed;pointer-events:none;width:40px;height:40px;z-index:9999;display:none;" 
+     alt="flower cursor">
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
