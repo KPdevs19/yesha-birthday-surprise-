@@ -1480,3 +1480,50 @@ h4 {
 body, html {
     cursor: url('images/flower-cursor.png') 20 20, auto !important;
 }
+
+
+/* Yesha signature logo */
+.yesha-logo {
+  position: fixed;
+  top: 22px;
+  left: 26px;
+  z-index: 9999;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.5px;
+
+  color: #805b69;
+  text-decoration: none;
+
+  opacity: 0.92;
+  transition: opacity 0.25s ease,
+              transform 0.25s ease;
+}
+
+.yesha-logo span {
+  color: #c9859b;
+  font-style: normal;
+  font-size: 23px;
+  margin-left: 2px;
+}
+
+.yesha-logo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Mobile positioning */
+@media (max-width: 600px) {
+  .yesha-logo {
+    top: 14px;
+    left: 16px;
+    font-size: 22px;
+  }
+
+  .yesha-logo span {
+    font-size: 20px;
+  }
+}
